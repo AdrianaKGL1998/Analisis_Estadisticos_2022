@@ -1,6 +1,6 @@
 # Analisis_Estadisticos_2022
 
-Repositorio para la clases laboratorios y tareas
+Repositorio para la clases laboratorios y **tareas**
 
 ## Contenido del curso
 
@@ -9,3 +9,4 @@ Repositorio para la clases laboratorios y tareas
 computo
 + :date: 09/08/2022: Laboratorio 1
 + :date: 09/08/2022: Tarea 1
+
