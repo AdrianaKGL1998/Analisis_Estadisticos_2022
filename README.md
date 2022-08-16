@@ -7,9 +7,8 @@ Repositorio para la clases laboratorios y **tareas**
 
 ### Semana 1
 + :notebook:09/08/2022: Preparacion de nuestro equipo de computo 
-computo
 + :paperclip: Laboratorio 1
 + :paperclip: Tarea 1
 
-### Semana 2
-+ :notebook:
+### :date: Semana 2 16/08/2022
++ :notebook: Ingresar mis datos a R
