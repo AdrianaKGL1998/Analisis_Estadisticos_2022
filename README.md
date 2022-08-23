@@ -12,3 +12,6 @@ Repositorio para la clases laboratorios y **tareas**
 
 ### :date: Semana 2 16/08/2022
 + :notebook: Ingresar mis datos a R
+
+### :date: Semana 3 23/08/2022
++ :notebook: Importar un csv datos a R
