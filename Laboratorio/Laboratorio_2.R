@@ -90,5 +90,6 @@ feeds <- table(chickwts$feed)
 barplot(feeds)
 barplot(feeds[order(feeds, decreasing = TRUE)])
 
+
 x11()
-barplot(feeds[order(feeds, decreasing = F)],horiz=T, las=1,col = colorRampPalette(c( '#FF8B00','#FFE700'))(6),xlab="Número de Pollos",main = "Frecuencias por tipos de alimentación")
+barplot(feeds[order(feeds, decreasing = F)],horiz=T, las=1,col = colorRampPalette(c('goldenrod2','gold','khaki1'))(6),xlab="Número de Pollos",main = "Frecuencias por tipos de alimentación")
