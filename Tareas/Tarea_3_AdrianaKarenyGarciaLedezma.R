@@ -72,7 +72,6 @@ mean(M2)
 #c) ¿Cual es la mediana? Muestre su trabajo o código, o explique cómo obtuvo su respuesta
 median(M2)
 
-
 # Problema 6 --------------------------------------------------------------
 
 set <- c(2, 2, 3, 6, 10)
@@ -96,8 +95,8 @@ uniqv2[which.max(tabulate(match(set5, uniqv2)))]
 #mediana y la media se ven afectadas cuando se agrega la misma constante a cada valor
 #de datos en un conjunto?
 M3 <- matrix(NaN,3,2)
-M3[,1] <- c(mean(set),median(set),uniqv1[which.max(tabulate(match(set, uniqv)))])
-M3[,2] <- c(mean(set5),median(set5),uniqv2[which.max(tabulate(match(set5, uniqv)))])
+M3[,1] <- c(mean(set),median(set),uniqv1[which.max(tabulate(match(set, uniqv1)))])
+M3[,2] <- c(mean(set5),median(set5),uniqv2[which.max(tabulate(match(set5, uniqv2)))])
 M3
 #RESPUESTA =Al hagregar una constante la cual interactua en todas, muestra un cambio equivalente en la media,mediana y moda.
 
@@ -114,7 +113,7 @@ mean(set_M5) #media
 #multiplica por la misma constante?
 
 Me <- matrix(NaN,3,2)
-Me[,1] <- c(mean(set),median(set),uniqv1[which.max(tabulate(match(set, uniqv)))])
+Me[,1] <- c(mean(set),median(set),uniqv1[which.max(tabulate(match(set, uniqv1)))])
 Me[,2] <- c(mean(set_M5 ),median(set_M5 ),uniqv3[which.max(tabulate(match(set_M5, uniqv3)))])
 Me
 #RESPUESTA= Las variables muestran un comportamiento igualitario a la modificacion que se le aplico.
@@ -145,3 +144,4 @@ mean(d1) #media
 d2 <-c(1,8,9,5,7) #Conjunto de digito 2
 median(d2)#mediana
 mean(d2) #media
+
