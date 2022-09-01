@@ -91,4 +91,6 @@ feeds
 barplot(feeds)
 barplot(feeds[order(feeds, decreasing = TRUE)])
 
-barplot(feeds[order(feeds, decreasing = F)],horiz=T, las=1,col = colorRampPalette(c('goldenrod2','gold','khaki1'))(6),xlab="Número de Pollos",main = "Frecuencias por tipos de alimentación")
+barplot(feeds[order(feeds, decreasing = F)],horiz=T, las=1
+        ,col = colorRampPalette(c('goldenrod2','gold','khaki1'))(6),xlab="Numero de Pollos"
+        ,main = "Frecuencias por tipos de alimentacion",cex.names = 0.8)
