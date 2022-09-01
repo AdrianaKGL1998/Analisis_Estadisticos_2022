@@ -1,4 +1,4 @@
-#Adriana Kareny García Ledezma
+#Adriana Kareny Garcia Ledezma
 # 28/08/2022
 # Tarea 1
 
