@@ -1,6 +1,6 @@
 #Adriana Kareny Garcia Ledezma
 # 31/08/2022
-# Tarea 4
+# Laboratorio 4
 
 
 
@@ -18,7 +18,7 @@ dim(inventario)
 # nombre de las primeras cinco columnas
 names(inventario[ ,1:5])
 
-# Resumen estadístico básico de las columnas 3 a 5 columnas
+# Resumen estad?stico b?sico de las columnas 3 a 5 columnas
 summary(inventario[ ,3:5])
 
 is.factor(inventario$Posicion)
@@ -41,14 +41,14 @@ perc_position = 100 * prop_position
 perc_position
 
 
-# Gráficas barplot y pie --------------------------------------------------
+# Gr?ficas barplot y pie --------------------------------------------------
 
 barplot(freq_position, las = 1, border = NA, cex.names = 0.7)
 
-#Gráfico circular o pie
+#Gr?fico circular o pie
 pie(freq_position, col=topo.colors(4))
 # topo.colors es una paleta de colores pre establecidas en R y
-# el paréntesis indica el # de colores a usar
+# el par?ntesis indica el # de colores a usar
 
 pie(freq_position, col = topo.colors(4),
     labels = paste(levels(inventario$Posicion), round(perc_position, 2), " %"))
@@ -78,7 +78,7 @@ diam_hist$breaks
 
 h1 <- hist(inventario$Diametros, xaxt = "n",
            breaks = c(6, 8, 10, 12, 14, 16, 18, 20, 22,24),
-           col = "#00cc99", xlab="Diámetros (cm)",
+           col = "#00cc99", xlab="Di?metros (cm)",
            ylab= "Frecuencias",
            main = "",
            las = 1,
