@@ -18,7 +18,7 @@ dim(inventario)
 # nombre de las primeras cinco columnas
 names(inventario[ ,1:5])
 
-# Resumen estadÌstico b·sico de las columnas 3 a 5 columnas
+# Resumen estad√≠stico b√°sico de las columnas 3 a 5 columnas
 summary(inventario[ ,3:5])
 
 is.factor(inventario$Posicion)
@@ -41,14 +41,14 @@ perc_position = 100 * prop_position
 perc_position
 
 
-# Gr·ficas barplot y pie --------------------------------------------------
+# Gr√°ficas barplot y pie --------------------------------------------------
 
 barplot(freq_position, las = 1, border = NA, cex.names = 0.7)
 
-#Gr·fico circular o pie
+#Gr√°fico circular o pie
 pie(freq_position, col=topo.colors(4))
 # topo.colors es una paleta de colores pre establecidas en R y
-# el parÈntesis indica el # de colores a usar
+# el par√©ntesis indica el # de colores a usar
 
 pie(freq_position, col = topo.colors(4),
     labels = paste(levels(inventario$Posicion), round(perc_position, 2), " %"))
@@ -78,7 +78,7 @@ diam_hist$breaks
 
 h1 <- hist(inventario$Diametros, xaxt = "n",
            breaks = c(6, 8, 10, 12, 14, 16, 18, 20, 22,24),
-           col = "#00cc99", xlab="Di·metros (cm)",
+           col = "#00cc99", xlab="Di√°metros (cm)",
            ylab= "Frecuencias",
            main = "",
            las = 1,
@@ -89,13 +89,13 @@ axis(1, h1$mids)
 
 # Autoestudio -------------------------------------------------------------
 
-alt_hist <- hist(inventario$Altura, las = 1, col = 'orange')
+alt_hist <- hist(inventario$Altura, las = 1, col = '#FF7F24')
 alt_hist
 alt_hist$breaks
 
 h <- hist(inventario$Altura, xaxt = "n",
            breaks = c(8,10,12,14,16,18,20,22),
-           col = "cyan", xlab="Altura (cm)",
+           col = "#00FFFF", xlab="Altura (cm)",
            ylab= "Frecuencias",
            main = "",
            las = 1,
