@@ -29,6 +29,7 @@ is.factor(inventario$Posicion)
 summary(inventario[ ,3:5])
 
 
+
 # Tablas de frecuencia ----------------------------------------------------
 
 freq_position <- table(inventario$Posicion)
