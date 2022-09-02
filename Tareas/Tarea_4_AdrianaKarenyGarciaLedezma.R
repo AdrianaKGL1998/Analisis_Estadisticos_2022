@@ -4,100 +4,100 @@
 
 
 
-# Importar datos csv ---------------------------------------------- --------
+# Problema 1 --------------------------------------------------------------
+
+set.seed(9875)
+size <- 1000
+x2 <- round(runif(n = size, min = 0, max = 10), 2)
 
 
-esp.url  <- paste0( " https://raw.githubusercontent.com/mgtagle/ " ,
-                    " Principios Estadistica2021/main/cuadro1.csv " )
-inventario  <- read.csv( esp.url )
-cabeza ( inventario )
+hx <- hist(x2, las = 1, col = 'pink')
+hx
+hx$breaks
 
-# dimensiones (num filas y columnas)
-tenue ( inventario )
-
-# nombre de las primeras cinco columnas
-nombres( inventario [ , 1 : 5 ])
-
-# Resumen estadístico básico de las columnas 3 a 5 columnas
-resumen( inventario [ , 3 : 5 ])
-
-es.factor( inventario $ Posición )
-
-inventario $ Posición  <-  factor ( inventario $ Posición )
-es.factor( inventario $ Posición )
-
-resumen( inventario [ , 3 : 5 ])
+hx <- hist(x2, xaxt = "n",
+          breaks = c(0,2,4,6,8,10),
+          col = "cyan",)
+axis(1, hx$mids)
 
 
-# Tablas de frecuencia ---------------------------------------------- ------
-
-freq_position  <- table( inventario $ Posicion )
-freq_position
-
-prop_position  <-  freq_position  / sum( freq_position )
-prop_position
-
-posición_perc  =  100  *  posición_prop
-posición_perc
+hx2 <- hist(x2, xaxt = "n",
+           breaks = c(0,1,2,4,7,10),
+           col = "orange",)
+axis(1, hx2$mids)
 
 
-# Gráficas barplot y pie --------------------------------------------- -----
+# Problema 2 --------------------------------------------------------------
 
-barplot( freq_position , las  =  1 , border  =  NA , cex.names  =  0.7 )
-
-# Gráfico circular o pie
-tarta ( freq_position , col = topo.colors ( 4 ))
-# topo.colors es una paleta de colores preestablecida en R y
-# el paréntesis indica el # de colores a usar
-
-pastel ( freq_position , col  = topo.colors ( 4 ),
-         etiquetas  = pegar(niveles( inventario $ Posicion ), ronda( perc_posicion , 2 ), " % " ))
+#a. ¿Cuál distribución parece estar sesgada a la derecha? A
+#b. ¿Cuál distribución parece estar sesgada a la izquierda? D
+#c. ¿Cuál distribución parece ser simétrica o en forma de "campana"?C
+#d. ¿Cuál distribución parece ser bimodal?B
+#e. ¿Cuál distribución parece mostrar una falta de intervalos? A,B,D
 
 
-#Autoestudio ------------------------------------------------ -------------
+# Problema 3 --------------------------------------------------------------
 
-freq_Especie  <- table( inventario $ Especie )
-freq_especie
 
-prop_Especie  <-  freq_Especie  / sum( freq_Especie )
-prop_Especie
+data(quakes)
+tabla <- table(quakes$mag)
 
-perc_Especie  =  100  *  prop_Especie
-perc_Especie
+mags <-  hist(quakes$mag, xaxt = "n",
+              # breaks = c(en caso de necesitar aqui se puede especificar),
+              col = "#e6ac00", 
+              xlab="Magnitud de los terremotos",
+              ylab= "Frecuencias",main = "",
+              las = 1,
+              ylim = c(0,260))
+axis(1, mags$mids)
 
-barplot( freq_Especie , las  =  1 , border  =  NA , cex.names  =  0.7 , main  =  " Especie " )
+#a. ¿Cómo describiría la forma de esta distribución de las magnitudes de los terremotos?
+#Respuesta= sesgada a la derecha
+#b. Mencione un intervalo donde ocurren tipicamente las magnitudes.
+#Respuesta =4.2-4.4
+#c. Determine el rango de las magnitudes (Range = Max - Min).
+Ran = max(mags$counts)-min(mags$counts)
+Ran2 = max(mags$breaks) - min(mags$breaks)
+#d. ¿Qué porcentaje de los terremotos ocurren con magnitud en la clase 5.3 (5.1 : 5.4)?
+subset(mags$breaks,mags$breaks == 5.3)
+#e. ¿Qué porcentaje de los terremotos tiene una magnitud igual o mayor a 5.0?
 
-pie( freq_Especie , col  = topo.colors( 4 ),
-     etiquetas  = pegar(niveles( inventario $ Especie ), round( perc_Especie , 2 ), " % " ))
-
-# Histogramas ------------------------------------------------ -------------
-
-diam_hist  <- hist( inventario $ Diametros , las  =  1 , col  =  ' #ffe0b3 ' )
-diam_hist
-diam_hist $ descansos
-
-h1  <- hist( inventario $ Diametros , xaxt  =  " n " ,
-             descansos  = c( 6 , 8 , 10 , 12 , 14 , 16 , 18 , 20 , 22 , 24 ),
-             col  =  " #00cc99 " , xlab = " Diámetros (cm) " ,
-             ylab =  " Frecuencias " ,
-             principal  =  " " ,
-             las  =  1 ,
-             ylim  = c( 0 , 14 ))
-eje( 1 , h1 $ medios )
+#f. ¿Qué porcentaje de los terremotos tienen una magnitud menor o igual a 4.6?
 
 
 
-#Autoestudio ------------------------------------------------ -------------
+# Problema 4 --------------------------------------------------------------
 
-alt_hist  <- hist( inventario $ Altura , las  =  1 , col  =  ' naranja ' )
-alt_hist
-alt_hist $ descansos
+#B
 
-h  <- hist( inventario $ Altura , xaxt  =  " n " ,
-            descansos  = c( 8 , 10 , 12 , 14 , 16 , 18 , 20 , 22 ),
-            col  =  " cian " , xlab = " Altura (cm) " ,
-            ylab =  " Frecuencias " ,
-            principal  =  " " ,
-            las  =  1 ,
-            ylim  = c( 0 , 14 ))
-eje( 1 , h $ medios )
+
+# Problema 5 --------------------------------------------------------------
+
+# a ) F
+#b) H
+
+
+# Problema 6 --------------------------------------------------------------
+
+fires <- c(78, 44, 47, 105, 126, 181, 277, 210, 155)
+fires
+#Valor minimo
+minimo <- min(fires)
+#Valor máximo
+maximo <- max(fires)
+#Rango
+rango <- maximo - minimo
+#Q1 (25 %)
+quantile(fires,0.25)
+#Q2 (50 %)
+quantile(fires,0.50)
+#Q3 (75 %)
+quantile(fires,0.75)
+#Media
+mean(fires)
+#Varianza
+var(fires)
+#Desviación estándar
+sd(fires)
+#Realice un boxplot 
+boxplot(fires, main ="Incendios Forestales")
