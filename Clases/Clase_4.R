@@ -1,4 +1,6 @@
 #Adriana Kareny García Ledezma
+# 30/08/2022
+# Tarea Clases 4
 
 data("chickwts")#base de datos de r anteriormente guardada
 head(chickwts[c(1:2,42:43, 62:64), ])
