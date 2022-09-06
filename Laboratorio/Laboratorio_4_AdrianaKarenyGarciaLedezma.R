@@ -88,6 +88,7 @@ axis(1, h1$mids)
 
 
 
+
 # Autoestudio -------------------------------------------------------------
 
 alt_hist <- hist(inventario$Altura, las = 1, col = 'orange')
