@@ -27,3 +27,4 @@ Repositorio para la clases laboratorios y **tareas**
 
 ### :date: Semana 5 06/09/2022
 + :notebook: T-studio 
++ :paperclip: [Tarea 3](Tareas/Tarea_7_AdrianaKarenyGarciaLedezma.R)
