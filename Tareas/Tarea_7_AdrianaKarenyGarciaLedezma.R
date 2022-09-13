@@ -1,11 +1,11 @@
-#Adriana Kareny García Ledezma
+#Adriana Kareny GarcÃ­a Ledezma
 # 11/09/2022
 # Tarea 7
 costal <- c(87.7, 80.01, 77.28, 78.76, 81.52, 74.2, 80.71, 79.5, 77.87, 81.94,
             80.7,82.32, 75.78, 80.19, 83.91, 79.4, 77.52, 77.62, 81.4, 74.89, 82.95,
             73.59, 77.92, 77.18, 79.83, 81.23, 79.28, 78.44, 79.01, 80.47, 76.23,78.89,
             77.14, 69.94, 78.54, 79.7, 82.45, 77.29, 75.52, 77.21, 75.99,81.94, 80.41, 77.7)
-# Determinar el número de observaciones
+# Determinar el nÃºmero de observaciones
 n <- length(costal)
 n
 
@@ -13,11 +13,11 @@ n
 costa.media <- mean(costal)
 costa.media
 
-# Desviación estándar
+# DesviaciÃ³n estÃ¡ndar
 costa.sd <- sd(costal)
 costa.sd
 
-#El denominador se le conoce como error estándar de la media (se).
+#El denominador se le conoce como error estÃ¡ndar de la media (se).
 costa.se <- costa.sd/ sqrt(n)
 costa.se
 
@@ -26,26 +26,23 @@ costa.T <- (costa.media - 80)/ costa.se
 costa.T
 
 #Finalmente, el valor deppuede ser calculado.
-pt(costa.T, df = n-1)# Arriba se declaro "n" como número de costales observados
-
-#prueba de zafiro
-shapiro.test(costal)
+pt(costa.T, df = n-1)# Arriba se declaro "n" como nÃºmero de costales observados
 
 #prueba de comparacion de medias 
 t.test(costal, mu = 80)#mu=media teoretica
 
 # Ejercicio 1 -------------------------------------------------------------
 
-#¿Cuál es el valor de p?
-#Respuests: shapiro=0.5815, t.test=0.02264
+#Â¿CuÃ¡l es el valor de p?
+#Respuests: pt=0.01132175, t.test=0.02264
 
-#¿Cuántos grados de libertad tiene el experimento?
+#Â¿CuÃ¡ntos grados de libertad tiene el experimento?
 #Respuests: df=43
 
-#¿Cuál es la hipótesis aceptada?
-#Respuests:hipótesis alternativa 
+#Â¿CuÃ¡l es la hipÃ³tesis aceptada?
+#Respuests:hipÃ³tesis alternativa 
 
-#¿Existe evidencia de que el valor medio promedio de los costales observados es menor (significativamente) a los que anuncia el producto?
+#Â¿Existe evidencia de que el valor medio promedio de los costales observados es menor (significativamente) a los que anuncia el producto?
 #Respuests: Si, existe una diferencia de 1.08932 kg de diferencia al prometido en el producto
 
 
@@ -56,18 +53,18 @@ azufre <- c(15.8, 22.7, 26.8, 19.1, 18.5, 14.4, 8.3, 25.9, 26.4, 9.8,
             24.6, 19.4, 12.3, 15.9, 11.2, 14.7, 20.5, 26.6, 20.1, 17.0,
             22.3, 27.5, 23.9, 17.5, 11.0, 20.4, 16.2, 20.8, 13.3, 18.1)
 
-# Determinar el número de observaciones
+# Determinar el nÃºmero de observaciones
 na <- length(azufre)
 na
 
 azufre.media <- mean(azufre)
 azufre.media
 
-# Desviación estándar
+# DesviaciÃ³n estÃ¡ndar
 azufre.sd <- sd(azufre)
 azufre.sd
 
-#El denominador se le conoce como error estándar de la media (se).
+#El denominador se le conoce como error estÃ¡ndar de la media (se).
 azufre.se <- azufre.sd/ sqrt(na)
 azufre.se
 
@@ -76,27 +73,24 @@ azufre.T <- (azufre.media - 17.5)/ azufre.se
 azufre.T
 
 #Finalmente, el valor deppuede ser calculado.
-pt(azufre.T, df = na-1)# Arriba se declaro "na" como emisiones de óxido de azufre en toneladas al año
-
-#prueba de zafiro
-shapiro.test(azufre)
+pt(azufre.T, df = na-1)# Arriba se declaro "na" como emisiones de Ã³xido de azufre en toneladas al aÃ±o
 
 #prueba de comparacion de medias 
 t.test(azufre, mu = 17.5)#mu=media teoretica
 
-#¿Cuál es el valor de p?
-#Respuests: shapiro=0.8654, t.test=0.1893
+#Â¿CuÃ¡l es el valor de p?
+#Respuests: pt=0.9053257, t.test=0.1893
 
-#¿Cuáles son los intervalos de confianza al 95 % ?
+#Â¿CuÃ¡les son los intervalos de confianza al 95 % ?
 #Respuests: 16.87912, 20.53588
 
-#¿Cuántos grados de libertad tiene el experimento?
+#Â¿CuÃ¡ntos grados de libertad tiene el experimento?
 #Respuests: df=39
 
-#¿Cuál es la hipótesis aceptada?
+#Â¿CuÃ¡l es la hipÃ³tesis aceptada?
 #Respuests:Hipotesis nula
 
-#¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
+#Â¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
 #mayor (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
 #Respuests:No exite una diferencia significativa 
 
@@ -106,8 +100,9 @@ t.test(azufre, mu = 17.5)#mu=media teoretica
 temperaturas <- paste0("https://raw.githubusercontent.com/mgtagle/MCF-202_Agosto_2021/main/TEMPAIRE_DIA.csv")
 tempe <- read.csv(temperaturas)
 head(tempe)
+tempe
 
-# Determinar el número de observaciones
+# Determinar el nÃºmero de observaciones
 nt <- length(tempe$temp_media)
 nt
 
@@ -115,11 +110,11 @@ nt
 tempe.media <- mean(tempe$temp_media)
 tempe.media
 
-# Desviación estándar
+# DesviaciÃ³n estÃ¡ndar
 tempe.sd <- sd(tempe$temp_media)
 tempe.sd
 
-#El denominador se le conoce como error estándar de la media (se).
+#El denominador se le conoce como error estÃ¡ndar de la media (se).
 tempe.se <- tempe.sd/ sqrt(nt)
 tempe.se
 
@@ -128,27 +123,24 @@ tempe.T <- (tempe.media - 24)/ tempe.se
 tempe.T
 
 #Finalmente, el valor deppuede ser calculado.
-pt(tempe.T, df = nt-1)# Arriba se declaro "nt" como número de temperaturas observados
-
-#prueba de zafiro
-shapiro.test(tempe$temp_media)
+pt(tempe.T, df = nt-1)# Arriba se declaro "nt" como nÃºmero de temperaturas observados
 
 #prueba de comparacion de medias 
 t.test(tempe$temp_media, mu = 24)#mu=media teoretica
 
-#¿Cuál es el valor de p?
-#Respuests: shapiro=3.923e-14, t.test= 0.03615
+#Â¿CuÃ¡l es el valor de p?
+#Respuests: pt=0.01807384, t.test= 0.03615
 
-#¿Cuáles son los intervalos de confianza al 95 % ?
+#Â¿CuÃ¡les son los intervalos de confianza al 95 % ?
 #Respuests: 23.28216 23.97599
 
-#¿Cuántos grados de libertad tiene el experimento?
+#Â¿CuÃ¡ntos grados de libertad tiene el experimento?
 #Respuests: df=845
 
-#¿Cuál es la hipótesis aceptada?
+#Â¿CuÃ¡l es la hipÃ³tesis aceptada?
 #Respuests: Hipotesis alternativa
 
-#¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
+#Â¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
 #mayor (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
 #Respuests:Si, hay una diferencia de 0.37092 grados.
 
