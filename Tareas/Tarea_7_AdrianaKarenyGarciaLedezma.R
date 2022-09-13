@@ -94,11 +94,11 @@ t.test(azufre, mu = 17.5)#mu=media teoretica
 #Respuests: df=39
 
 #¿Cuál es la hipótesis aceptada?
-#Respuests:Hipotesis alternativa
+#Respuests:Hipotesis nula
 
 #¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
 #mayor (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
-#Respuests:Si, hay una diferencia de 1.2075 de emisiones de óxido de azufre en toneladas al año mayor a la permitida.
+#Respuests:No exite una diferencia significativa 
 
 
 # Ejercicio 3 -------------------------------------------------------------
@@ -128,7 +128,7 @@ tempe.T <- (tempe.media - 24)/ tempe.se
 tempe.T
 
 #Finalmente, el valor deppuede ser calculado.
-pt(tempe.T, df = nt-1)# Arriba se declaro "n" como número de costales observados
+pt(tempe.T, df = nt-1)# Arriba se declaro "nt" como número de temperaturas observados
 
 #prueba de zafiro
 shapiro.test(tempe$temp_media)
@@ -151,3 +151,4 @@ t.test(tempe$temp_media, mu = 24)#mu=media teoretica
 #¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
 #mayor (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
 #Respuests:Si, hay una diferencia de 0.37092 grados.
+
