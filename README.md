@@ -28,3 +28,6 @@ Repositorio para la clases laboratorios y **tareas**
 ### :date: Semana 5 06/09/2022
 + :notebook: T-studio 
 + :paperclip: [Tarea 5](Tareas/Tarea_7_AdrianaKarenyGarciaLedezma.R)
+
+### :date: Semana 6 20/09/2022
++ :notebook: conectividad y regresion 
