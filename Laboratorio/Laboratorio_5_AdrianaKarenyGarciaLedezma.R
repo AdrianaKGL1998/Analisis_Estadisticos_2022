@@ -13,7 +13,7 @@ plot(anscombe$x4, anscombe$y4, pch = 20)
 par(op)
 
 
-# Coeficiente de correlación ----------------------------------------------
+# Coeficiente de correlacion ----------------------------------------------
 
 ## Conjunto de Datos 1
 Datos1 <- matrix(0,length(anscombe$x1),2)
@@ -29,27 +29,27 @@ plot(anscombe$x1, anscombe$y1, pch = 20)
 abline(cd1.lm,col="red")
 
 
-## Examinar la relación que existe entre dos muestras mediante una correlación.
+## Examinar la relacion que existe entre dos muestras mediante una correlacion.
 ### Respuesta: Es una relacion lineal simple.
 
-## Explore los datos gráficamente y explique.
+## Explore los datos graficamente y explique.
 ### Respuesta: Es una correlacion positiva.
 
-##Establezca la Hipótesis nula y la Hipótesis alternativa,
-### Respuesta: Hipótesis nula = No hay una corelacion significatuva; Hipótesis alternativa = hay una corelacion significatuva
+##Establezca la Hipotesis nula y la Hipotesis alternativa,
+### Respuesta: Hipotesis nula = No hay una corelacion significatuva; Hipotesis alternativa = hay una corelacion significatuva
 
 ## Aplique la prueba correspondiente.
 
 ###Prueba de zafiro
 shapiro.test(anscombe$x1) #Los datos son normales.
 
-###Coeficientes de correlación (r).
+###Coeficientes de correlacion (r).
 c.d1 <- cor.test(anscombe$x1, anscombe$y1)
 c.d1
 
 summary(cd1.lm)
-##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, así como la significancia
-##de la correlación).
+##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, asi como la significancia
+##de la correlacion).
 ### Respuesta: r=0.8164205; df=9; p-value=0.00217.
 ### Hipotesis alterna=La correlacion si es significativa 
 
@@ -69,27 +69,27 @@ plot(anscombe$x2, anscombe$y2, pch = 20)
 abline(cd2.lm,col="red")
 
 
-## Examinar la relación que existe entre dos muestras mediante una correlación.
+## Examinar la relacion que existe entre dos muestras mediante una correlacion.
 ### Respuesta: Es una relacion no lineal.
 
-## Explore los datos gráficamente y explique.
+## Explore los datos graficamente y explique.
 ### Respuesta: Es una relacion no lineal.
 
-##Establezca la Hipótesis nula y la Hipótesis alternativa,
-### Respuesta: Hipótesis nula = No hay una corelacion significatuva; Hipótesis alternativa = hay una corelacion significatuva
+##Establezca la Hipotesis nula y la Hipotesis alternativa,
+### Respuesta: Hipotesis nula = No hay una corelacion significatuva; Hipotesis alternativa = hay una corelacion significatuva
 
 ## Aplique la prueba correspondiente.
 
 ###Prueba de zafiro
 shapiro.test(anscombe$x2) #Los datos son normales.
 
-###Coeficientes de correlación (r).
+###Coeficientes de correlacion (r).
 c.d2 <- cor.test(anscombe$x2, anscombe$y2)
 c.d2
 
 summary(cd2.lm)
-##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, así como la significancia
-##de la correlación).
+##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, asi como la significancia
+##de la correlacion).
 ### Respuesta: r=0.8162365; df=9; p-value=0.002179.
 ### Hipotesis alterna=La correlacion si es significativa 
 
@@ -109,27 +109,27 @@ plot(anscombe$x3, anscombe$y3, pch = 20)
 abline(cd3.lm,col="red")
 
 
-## Examinar la relación que existe entre dos muestras mediante una correlación.
+## Examinar la relacion que existe entre dos muestras mediante una correlacion.
 ### Respuesta: Es una relacion lineal simple.
 
-## Explore los datos gráficamente y explique.
+## Explore los datos graficamente y explique.
 ### Respuesta: Es una correlacion positiva.
 
-##Establezca la Hipótesis nula y la Hipótesis alternativa,
-### Respuesta: Hipótesis nula = No hay una corelacion significatuva; Hipótesis alternativa = hay una corelacion significatuva
+##Establezca la Hipotesis nula y la Hipotesis alternativa,
+### Respuesta: Hipotesis nula = No hay una corelacion significatuva; Hipotesis alternativa = hay una corelacion significatuva
 
 ## Aplique la prueba correspondiente.
 
 ###Prueba de zafiro
 shapiro.test(anscombe$x3) #Los datos son normales.
 
-###Coeficientes de correlación (r).
+###Coeficientes de correlacion (r).
 c.d1 <- cor.test(anscombe$x3, anscombe$y3)
 c.d1
 
 summary(cd3.lm)
-##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, así como la significancia
-##de la correlación).
+##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, asi como la significancia
+##de la correlacion).
 ### Respuesta: r=0.8164205; df=9; p-value=0.00217.
 ### Hipotesis alterna=La correlacion si es significativa 
 
@@ -149,29 +149,29 @@ plot(anscombe$x4, anscombe$y4, pch = 20)
 abline(cd4.lm,col="red")
 
 
-## Examinar la relación que existe entre dos muestras mediante una correlación.
+## Examinar la relacion que existe entre dos muestras mediante una correlacion.
 ### Respuesta: Es una relacion no lineal.
 
-## Explore los datos gráficamente y explique.
+## Explore los datos graficamente y explique.
 ### Respuesta:Es una relacion no lineal.
-##Establezca la Hipótesis nula y la Hipótesis alternativa,
-### Respuesta: Hipótesis nula = No hay una corelacion significatuva; Hipótesis alternativa = hay una corelacion significatuva
+##Establezca la Hipotesis nula y la Hipotesis alternativa,
+### Respuesta: Hipotesis nula = No hay una corelacion significatuva; Hipotesis alternativa = hay una corelacion significatuva
 
 ## Aplique la prueba correspondiente.
 
 ###Prueba de zafiro
 shapiro.test(anscombe$x4) #Los datos no son normales.
 
-###Coeficientes de correlación (r).
+###Coeficientes de correlacion (r).
 c.d4 <- cor.test(anscombe$x4, anscombe$y4)
 c.d4
 
 summary(cd4.lm)
-##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, así como la significancia
-##de la correlación).
+##Reporte los datos (indicar valor de r, grados de libertad y probabilidad, asi como la significancia
+##de la correlacion).
 ### Respuesta: tau=0.8164205; df=9; p-value=0.00217.
 ### Hipotesis alterna=La correlacion si es significativa 
 
-#¿Alguna sorpresa? Como puedes ver, los cuatro pares de las variables xy tienen básicamente la misma
-#correlación de 0.816. Pero no todos tienen diagramas de dispersión en los que los puntos se agrupan
-#alrededor de una línea.
+#�Alguna sorpresa? Como puedes ver, los cuatro pares de las variables xy tienen basicamente la misma
+#correlacion de 0.816. Pero no todos tienen diagramas de dispersion en los que los puntos se agrupan
+#alrededor de una linea.
