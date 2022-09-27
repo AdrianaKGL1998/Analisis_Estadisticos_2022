@@ -142,5 +142,5 @@ t.test(tempe$temp_media, mu = 24)#mu=media teoretica
 
 #¿Existe evidencia de que el valor medio promedio de las emisiones observadas es 
 #mayor (significativamente) a la declarada en los procedimientos de seguridad de la empresa?
-#Respuests:Si, hay una diferencia de 0.37092 grados.
+#Respuests:No,es menor.
 
