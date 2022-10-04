@@ -31,3 +31,14 @@ Repositorio para la clases laboratorios y **tareas**
 
 ### :date: Semana 6 20/09/2022
 + :notebook: conectividad y regresion 
++ :paperclip: [Laboratorio 5](Laboratorio/Laboratorio_5_AdrianaKarenyGarciaLedezma.R)
++ :paperclip: [Tarea 5](Tareas/Tarea_5_AdrianaKarenyGarciaLedezma.R)
++ :paperclip: [Laboratorio 6](Laboratorio/Laboratorio_6_AdrianaKarenyGarciaLedezma.R)
++ :paperclip: [Tarea 6](Tareas/Tarea_6_AdrianaKarenyGarciaLedezma.R)
+
+### :date: Semana 7 27/09/2022
++ :notebook: ANOVA
+
+### :date: Semana 8 04/10/2022
++ :notebook: ANOVA
+
