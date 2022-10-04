@@ -41,4 +41,5 @@ Repositorio para la clases laboratorios y **tareas**
 
 ### :date: Semana 8 04/10/2022
 + :notebook: Examen
++ :paperclip: [Laboratorio 5](examen/Examen_Adriana_Garcia.R)
 
