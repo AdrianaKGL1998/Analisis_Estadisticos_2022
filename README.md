@@ -40,5 +40,5 @@ Repositorio para la clases laboratorios y **tareas**
 + :notebook: ANOVA
 
 ### :date: Semana 8 04/10/2022
-+ :notebook: ANOVA
++ :notebook: Examen
 
